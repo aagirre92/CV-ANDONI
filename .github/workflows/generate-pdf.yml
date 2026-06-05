@@ -35,32 +35,52 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-xetex
 
-      - name: Identify exactly which ES files changed
+      - name: Identify exactly which CV files changed
         id: changed-files
         uses: tj-actions/changed-files@v44
         with:
-          # FILTER BY SPANISH CV MARKDOWN FILES
+          # Track BOTH Spanish and English files so Pandoc knows about them
           files: |
             **/*_ES.md
             **/*_ES.MD
+            **/*_EN.md
+            **/*_EN.MD
 
       - name: Translate ONLY modified Spanish CVs via Claude
-        # 2. Only run this step if an ES file was actually changed
         if: steps.changed-files.outputs.any_changed == 'true'
         env:
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
-        # 3. Pass only the specific files to Python, preventing wasteful token burn
-        run: python .github/scripts/translate_cv.py ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          # Only pass the _ES files to Python to protect your API tokens!
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ "$file" == *"_ES.MD" ]] || [[ "$file" == *"_ES.md" ]]; then
+              python .github/scripts/translate_cv.py "$file"
+            fi
+          done
 
       - name: Convert Markdown to PDF
         run: |
           mkdir -p PDF
           
-          find . -maxdepth 1 -type f -iname "CV_*.md" | while read -r file; do
+          # Loop exclusively through the files that were modified in this commit
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            
+            # 1. Convert the modified file (ES or EN)
             filename=$(basename "$file")
             name="${filename%.*}"
-            
             pandoc "$file" -o "PDF/${name}_AUTO.pdf" --pdf-engine=xelatex
+            
+            # 2. If the modified file was ES, also convert its newly translated EN counterpart
+            if [[ "$file" == *"_ES.MD" ]] || [[ "$file" == *"_ES.md" ]]; then
+              en_file="${file/_ES.MD/_EN.MD}"
+              en_file="${en_file/_ES.md/_EN.md}"
+              
+              if [ -f "$en_file" ]; then
+                en_filename=$(basename "$en_file")
+                en_name="${en_filename%.*}"
+                pandoc "$en_file" -o "PDF/${en_name}_AUTO.pdf" --pdf-engine=xelatex
+              fi
+            fi
           done
 
       - name: Commit and push translated MD and PDFs

@@ -19,7 +19,7 @@ header-includes: |
 
 Ingeniero Cloud y Automatización especializado en **Microsoft Azure, Google Cloud, Python y RPA**. Diseño y construyo **soluciones de automatización escalables que integran sistemas empresariales, reducen operaciones manuales y optimizan procesos de negocio**.
 
-Mi trabajo se centra en **automatización, integración de sistemas y soluciones cloud que generan un impacto operativo medible, manteniéndose simples, fiables y de bajo mantenimiento**.
+Mi trabajo se centra en **el análisis de procesos, automatización, integración de sistemas y soluciones cloud que generan un impacto operativo medible, manteniéndose simples, fiables y de bajo mantenimiento**.
 
 ---
 
