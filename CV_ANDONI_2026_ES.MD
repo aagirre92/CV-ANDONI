@@ -1,6 +1,6 @@
 ---
 title: "Andoni Aguirre Aranguren"
-subtitle: "Ingeniero Cloud y Automatización | Azure | Python | RPA"
+subtitle: "Ingeniero Cloud y Automatización | Azure, Google Cloud Platform | Python | RPA"
 geometry: "margin=2cm"
 fontsize: 11pt
 colorlinks: true
@@ -17,7 +17,7 @@ header-includes: |
   \pagenumbering{gobble}
 ---
 
-Ingeniero Cloud y Automatización especializado en **Microsoft Azure, Python y RPA**. Diseño y construyo **soluciones de automatización escalables que integran sistemas empresariales, reducen operaciones manuales y optimizan procesos de negocio**.
+Ingeniero Cloud y Automatización especializado en **Microsoft Azure, Google Cloud, Python y RPA**. Diseño y construyo **soluciones de automatización escalables que integran sistemas empresariales, reducen operaciones manuales y optimizan procesos de negocio**.
 
 Mi trabajo se centra en **automatización, integración de sistemas y soluciones cloud que generan un impacto operativo medible, manteniéndose simples, fiables y de bajo mantenimiento**.
 
@@ -102,7 +102,7 @@ Estas automatizaciones **redujeron significativamente el trabajo manual y el tie
 
 ## Tecnologías
 
-Microsoft Azure, Python, Power Automate, Power Automate Desktop, SQL, Snowflake, Azure Table Storage (NoSQL)
+Microsoft Azure, Google Cloud, Python, Power Automate, Power Automate Desktop, SQL, Snowflake, Azure Table Storage
 
 ---
 
