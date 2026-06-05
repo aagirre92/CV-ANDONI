@@ -3,9 +3,11 @@ name: Translate (Claude) and Generate CV PDF
 on:
   push:
     paths:
-      # 1. The workflow ONLY starts if a Spanish CV is pushed
+      # 1. The workflow ONLY starts if a markdown CV is pushed
       - '**/*_ES.md'
       - '**/*_ES.MD'
+      - '**/*_EN.md'
+      - '**/*_EN.MD'     
     branches:
       - main 
 
@@ -37,6 +39,7 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v44
         with:
+          # FILTER BY SPANISH CV MARKDOWN FILES
           files: |
             **/*_ES.md
             **/*_ES.MD
@@ -63,5 +66,4 @@ jobs:
       - name: Commit and push translated MD and PDFs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto-translate modified CVs and update PDFs"
-          file_pattern: '*_EN.MD *_EN.md PDF/*.pdf'
+          commit_message: "chore: auto-translate modified ES CVs and convert to PDF"

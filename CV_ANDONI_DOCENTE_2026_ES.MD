@@ -83,17 +83,9 @@ Actualmente estoy cursando el **Grado en Ingeniería Informática** a través de
 
 ---
 
-## Certificaciones Destacadas
-
-**Tecnología y Automatización:**
-
-* **UiPath:** Infrastructure Training (Implementación y Arquitectura de Orchestrator).
-* **Microsoft:** Certified Azure Fundamentals.
-* **Automation Anywhere:** Certified Master RPA Professional (A2019) & Certified Advanced RPA Professional.
-
-**Idiomas:**
+## Idiomas
 
 * **Inglés:** Nivel C1 (Cambridge: Advanced - CAE). Capacidad para impartir formaciones técnicas en inglés.
 * **Euskera:** Nativo / Bilingüe (EGA).
 * **Italiano:** Competencia profesional.
-* **Castellano:** Nativo / Bilingüe.
+* **Castellano:** Nativo.
