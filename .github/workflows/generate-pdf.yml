@@ -1,12 +1,13 @@
-name: Generate CV PDF (Pandoc)
+name: Translate (Claude) and Generate CV PDF
 
 on:
   push:
     paths:
-      - '**/*.md'
-      - '**/*.MD'
+      # 1. The workflow ONLY starts if a Spanish CV is pushed
+      - '**/*_ES.md'
+      - '**/*_ES.MD'
     branches:
-      - main
+      - main 
 
 jobs:
   build:
@@ -16,29 +17,51 @@ jobs:
 
     steps:
       - name: Checkout repository
+        # Fetch depth 0 is required for the changed-files action to compare commits correctly
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
 
-      - name: Install Pandoc and LaTeX environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
         run: |
+          pip install anthropic
           sudo apt-get update
-          # texlive-latex-extra is required for the \usepackage{titling} command
-          sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex
+          sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-xetex
 
-      - name: Convert Markdown to PDF using Pandoc
+      - name: Identify exactly which ES files changed
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            **/*_ES.md
+            **/*_ES.MD
+
+      - name: Translate ONLY modified Spanish CVs via Claude
+        # 2. Only run this step if an ES file was actually changed
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+        # 3. Pass only the specific files to Python, preventing wasteful token burn
+        run: python .github/scripts/translate_cv.py ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Convert Markdown to PDF
         run: |
           mkdir -p PDF
           
-          # Find all markdown files and process them
           find . -maxdepth 1 -type f -iname "*.md" | while read -r file; do
             filename=$(basename "$file")
             name="${filename%.*}"
             
-            # Run pandoc with xelatex as the engine
             pandoc "$file" -o "PDF/${name}_AUTO.pdf" --pdf-engine=xelatex
           done
 
-      - name: Commit and push PDF
+      - name: Commit and push translated MD and PDFs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update PDF version of CV via Pandoc"
-          file_pattern: 'PDF/*.pdf'
+          commit_message: "chore: auto-translate modified CVs and update PDFs"
+          file_pattern: '*_EN.MD *_EN.md PDF/*.pdf'
