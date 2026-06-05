@@ -93,7 +93,7 @@ Actualmente estoy cursando el **Grado en Ingeniería Informática** a través de
 
 **Idiomas:**
 
-* **Inglés:** Nivel C1 (Cambridge English: Advanced - CAE). Capacidad para impartir formaciones técnicas en inglés.
+* **Inglés:** Nivel C1 (Cambridge: Advanced - CAE). Capacidad para impartir formaciones técnicas en inglés.
 * **Euskera:** Nativo / Bilingüe (EGA).
 * **Italiano:** Competencia profesional.
 * **Castellano:** Nativo / Bilingüe.
