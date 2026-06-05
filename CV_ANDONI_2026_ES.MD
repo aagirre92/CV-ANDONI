@@ -83,7 +83,7 @@ Diseño de soluciones para extraer información estructurada de documentos no es
 Contribuciones clave:
 
 * Extracción de datos con IA usando **Microsoft Azure AI Foundry**
-* Transformación de **documentos no estructurados en datos JSON estructurados**
+* Transformación de **texto no estructurado JSON**
 * Pipelines de procesamiento automatizado integrando datos extraídos en flujos de trabajo empresariales
 
 Esto permitió la **automatización de tareas de procesamiento documental que anteriormente requerían extracción manual de datos**.
