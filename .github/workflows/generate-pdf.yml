@@ -1,0 +1,44 @@
+name: Generate CV PDF (Pandoc)
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '**/*.MD'
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX environment
+        run: |
+          sudo apt-get update
+          # texlive-latex-extra is required for the \usepackage{titling} command
+          sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex
+
+      - name: Convert Markdown to PDF using Pandoc
+        run: |
+          mkdir -p PDF
+          
+          # Find all markdown files and process them
+          find . -maxdepth 1 -type f -iname "*.md" | while read -r file; do
+            filename=$(basename "$file")
+            name="${filename%.*}"
+            
+            # Run pandoc with pdflatex as the engine
+            pandoc "$file" -o "PDF/${name}_AUTO.pdf" --pdf-engine=pdflatex
+          done
+
+      - name: Commit and push PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update PDF version of CV via Pandoc"
+          file_pattern: 'PDF/*.pdf'
