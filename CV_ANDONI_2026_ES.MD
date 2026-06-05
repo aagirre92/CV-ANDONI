@@ -39,7 +39,7 @@ Experiencia trabajando con **sistemas empresariales, APIs y herramientas de auto
 Power Automate, Power Automate Desktop, Automatización Robótica de Procesos, Automatización de Procesos de Negocio
 
 **Cloud**
-Microsoft Azure, Azure Functions, Azure API Management
+Google Cloud, Microsoft Azure, Azure Functions, Azure API Management
 
 **Desarrollo**
 Python, Scripting de automatización, Integraciones API

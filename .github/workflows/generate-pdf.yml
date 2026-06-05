@@ -33,8 +33,8 @@ jobs:
             filename=$(basename "$file")
             name="${filename%.*}"
             
-            # Run pandoc with pdflatex as the engine
-            pandoc "$file" -o "PDF/${name}_AUTO.pdf" --pdf-engine=pdflatex
+            # Run pandoc with xelatex as the engine
+            pandoc "$file" -o "PDF/${name}_AUTO.pdf" --pdf-engine=xelatex
           done
 
       - name: Commit and push PDF
