@@ -9,7 +9,7 @@ El repositorio cuenta con un flujo de trabajo (Workflow) que se dispara automát
 El pipeline realiza las siguientes tareas de forma desatendida:
 
 1. **Traducción Automática (Claude AI):** 
-   Si el commit incluye cambios en un currículum en español (archivos terminados en `_ES.MD`), un script en Python utiliza la API de Anthropic (Claude 3.5 Sonnet) para traducirlo al inglés. El prompt del sistema está diseñado para traducir únicamente el texto humano, respetando estrictamente el *Frontmatter* YAML, la estructura Markdown y los comandos LaTeX (como los iconos de FontAwesome).
+   Si el commit incluye cambios en un currículum en español (archivos terminados en `_ES.MD`), un script en Python utiliza la API de Anthropic (claude-haiku-4-5) para traducirlo al inglés. El prompt del sistema está diseñado para traducir únicamente el texto humano, respetando estrictamente el *Frontmatter* YAML, la estructura Markdown y los comandos LaTeX (como los iconos de FontAwesome).
    > *Nota: El sistema está optimizado para identificar exactamente qué archivos han cambiado en el commit, evitando gastar tokens de la API en archivos no modificados.*
 
 2. **Generación de PDFs (Pandoc + LaTeX):** 
