@@ -1,6 +1,6 @@
 ---
 title: "Andoni Aguirre Aranguren"
-subtitle: "Cloud & Automation Engineer | Azure | Python | RPA"
+subtitle: "Cloud & Automation Engineer | Google Cloud, Azure | Python | RPA"
 geometry: "margin=2cm"
 fontsize: 11pt
 colorlinks: true
@@ -17,7 +17,7 @@ header-includes: |
   \pagenumbering{gobble}
 ---
 
-Cloud & Automation Engineer specialized in **Microsoft Azure, Python and RPA**. I design and build **scalable automation solutions that integrate enterprise systems, reduce manual operations and streamline business processes**.
+Cloud & Automation Engineer specialized in **Microsoft Azure, Google Cloud, Python and RPA**. I design and build **scalable automation solutions that integrate enterprise systems, reduce manual operations and streamline business processes**.
 
 My work focuses on **automation, system integration and cloud solutions that deliver measurable operational impact while remaining simple, reliable and low-maintenance**.
 
@@ -36,18 +36,23 @@ Experience working with **enterprise systems, APIs and automation tools to orche
 ## Core Skills
 
 **Automation & RPA**
+
 Power Automate, Power Automate Desktop, Robotic Process Automation, Business Process Automation
 
 **Cloud**
-Microsoft Azure, Azure Functions, Azure API Management
+
+Google Cloud, Microsoft Azure, Azure Functions, Azure API Management
 
 **Development**
+
 Python, Automation scripting, API integrations
 
 **Integration**
+
 REST APIs, SOAP APIs, Enterprise system integration
 
 **Data**
+
 SQL, Snowflake, Azure Table Storage (NoSQL)
 
 ---

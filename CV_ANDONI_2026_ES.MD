@@ -36,19 +36,23 @@ Experiencia trabajando con **sistemas empresariales, APIs y herramientas de auto
 ## Competencias Clave
 
 **Automatización y RPA**
+
 Power Automate, Power Automate Desktop, Automatización Robótica de Procesos, Automatización de Procesos de Negocio
 
 **Cloud**
+
 Google Cloud, Microsoft Azure, Azure Functions, Azure API Management
 
 **Desarrollo**
+
 Python, Scripting de automatización, Integraciones API
 
 **Integración**
+
 APIs REST, APIs SOAP, Integración de sistemas empresariales
 
-
 **Datos**
+
 SQL, Snowflake, Azure Table Storage (NoSQL)
 
 
