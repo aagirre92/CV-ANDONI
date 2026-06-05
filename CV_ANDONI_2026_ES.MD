@@ -112,4 +112,4 @@ Microsoft Azure, Google Cloud, Python, Power Automate, Power Automate Desktop, S
 
 ## Formación Actual
 
-Agentes de IA con Python y Copilot Studio, Asyncio y programación concurrente en Python, VHDL para diseño de hardware, Bases de Datos Relacionales y SQL
+Agentes de IA con Python y Claude Agents SDK, Asyncio y programación concurrente en Python, VHDL para diseño de hardware, Bases de Datos Relacionales y SQL
