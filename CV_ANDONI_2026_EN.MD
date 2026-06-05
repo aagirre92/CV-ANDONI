@@ -19,7 +19,7 @@ header-includes: |
 
 Cloud and Automation Engineer specialized in **Microsoft Azure, Google Cloud, Python and RPA**. I design and build **scalable automation solutions that integrate enterprise systems, reduce manual operations and optimize business processes**.
 
-My work focuses on **automation, systems integration and cloud solutions that generate measurable operational impact, while remaining simple, reliable and low-maintenance**.
+My work focuses on **process analysis, automation, systems integration and cloud solutions that generate measurable operational impact, while remaining simple, reliable and low-maintenance**.
 
 ---
 
@@ -66,8 +66,8 @@ Design and implementation of automation solutions to optimize business processes
 
 Key contributions:
 
-* Analysis of business processes and identification of automation opportunities
-* Automation of operational workflows in enterprise platforms including **SAP, Workday and Snowflake**
+* Business process analysis and identification of automation opportunities
+* Automation of operational workflows on enterprise platforms including **SAP, Workday and Snowflake**
 * End-to-end integrations using **Azure Functions and cloud services**
 * API integrations using **REST and SOAP services**
 * Automation pipelines that connect multiple enterprise systems and enable automated data exchange
