@@ -1,6 +1,6 @@
 ---
 title: "Andoni Aguirre Aranguren"
-subtitle: "Ingeniero Cloud y Automatización | Azure, Google Cloud Platform | Python | RPA"
+subtitle: "Cloud & Automation Engineer · Azure · GCP · Python · RPA · 8+ años de experiencia"
 geometry: "margin=2cm"
 fontsize: 11pt
 colorlinks: true
@@ -16,10 +16,6 @@ header-includes: |
   \postdate{}
   \pagenumbering{gobble}
 ---
-
-# Andoni Aguirre Aranguren
-
-**Cloud & Automation Engineer · Azure · GCP · Python · RPA · 8+ años de experiencia**
 
 📍 León, España · +34 664 242 615 · [aagirre92@gmail.com](mailto:aagirre92@gmail.com) · [linkedin.com/in/aaguirrearanguren](https://www.linkedin.com/in/aaguirrearanguren/) · [github.com/aagirre92](https://github.com/aagirre92)
 
