@@ -17,99 +17,138 @@ header-includes: |
   \pagenumbering{gobble}
 ---
 
-Ingeniero Cloud y Automatización especializado en **Microsoft Azure, Google Cloud, Python y RPA**. Diseño y construyo **soluciones de automatización escalables que integran sistemas empresariales, reducen operaciones manuales y optimizan procesos de negocio**.
+# Andoni Aguirre Aranguren
 
-Mi trabajo se centra en **el análisis de procesos, automatización, integración de sistemas y soluciones cloud que generan un impacto operativo medible, manteniéndose simples, fiables y de bajo mantenimiento**.
+**Cloud & Automation Engineer · Azure · GCP · Python · RPA · 8+ años de experiencia**
+
+📍 León, España · +34 664 242 615 · [aagirre92@gmail.com](mailto:aagirre92@gmail.com) · [linkedin.com/in/aaguirrearanguren](https://www.linkedin.com/in/aaguirrearanguren/) · [github.com/aagirre92](https://github.com/aagirre92)
 
 ---
 
 ## Resumen Profesional
 
-Ingeniero de automatización con experiencia en el diseño e implementación de **automatización de procesos de negocio, integraciones empresariales y soluciones basadas en la nube**.
+Ingeniero de automatización con más de 8 años de experiencia en automatización de procesos, integración de sistemas cloud y RPA. 
 
-Capacidad para analizar flujos de trabajo operativos, identificar oportunidades de automatización y entregar **soluciones end-to-end que conectan plataformas empresariales, automatizan procesos manuales y mejoran la eficiencia operativa**.
+He trabajado en proyectos de producción para clientes multinacionales del sector de salud, farmacéutico, retail, y manufactura, diseñando soluciones end-to-end con Azure, Python y Power Automate que conectan plataformas como SAP, Workday, Snowflake y Jira (entre otros).
 
-Experiencia trabajando con **sistemas empresariales, APIs y herramientas de automatización para orquestar flujos de trabajo, automatizar el procesamiento de datos e integrar entornos cloud y on-premise**.
-
----
-
-## Competencias Clave
-
-**Automatización y RPA**
-
-Power Automate, Power Automate Desktop, Automatización Robótica de Procesos, Automatización de Procesos de Negocio
-
-**Cloud**
-
-Google Cloud, Microsoft Azure, Azure Functions, Azure API Management
-
-**Desarrollo**
-
-Python, Scripting de automatización, Integraciones API
-
-**Integración**
-
-APIs REST, APIs SOAP, Integración de sistemas empresariales
-
-**Datos**
-
-SQL, Snowflake, Azure Table Storage (NoSQL)
-
+Mi enfoque se centra en transformar procesos empresariales complejos en soluciones escalables, de bajo mantenimiento y con impacto operativo medible.
 
 ---
 
-## Proyectos Profesionales
+## Experiencia Profesional
 
-### Automatización de Procesos Empresariales e Integraciones de Sistemas
+### Senior Software Engineer · EPAM Systems Spain
+*Enero 2022 – Actualidad · Madrid (remoto)*
 
-Diseño e implementación de soluciones de automatización para optimizar procesos de negocio y reducir operaciones manuales en sistemas empresariales.
+**Cliente retail europeo — Automatización CRO Reporting**
 
-Contribuciones clave:
+- Diseño e implementación de un pipeline de reporting en Python que genera presentaciones PowerPoint automáticamente desde datos de Jira, usando Azure Functions y Azure Blob Storage como infraestructura cloud.
+- Publicación automatizada de informes en Confluence mediante la API de Atlassian, reduciendo el tiempo de elaboración de informes semanales de horas a minutos.
 
-* Análisis de procesos de negocio e identificación de oportunidades de automatización
-* Automatización de flujos de trabajo operativos en plataformas empresariales incluyendo **SAP, Workday y Snowflake**
-* Integraciones end-to-end usando **Azure Functions y servicios cloud**
-* Integraciones API usando **servicios REST y SOAP**
-* Pipelines de automatización que conectan múltiples sistemas empresariales y permiten el intercambio automatizado de datos
+**Cliente europeo sector farmacéutico — Migración RPA a la nube**
 
-Estas soluciones mejoraron la eficiencia operativa **reduciendo el procesamiento manual y habilitando flujos de trabajo automatizados entre sistemas**.
+- Lideré la migración de Automation Anywhere A360 de on-premise a SaaS, coordinando aspectos técnicos, de seguridad y cumplimiento (GDPR).
+- Optimización de costes migrando procesos desde Automation Anywhere al ecosistema Microsoft Power Automate, reduciendo licencias y simplificando el mantenimiento.
+- Creación de automatizaciones para SAP ERP con herramientas RPA y Python.
 
----
+**Otros proyectos en EPAM**
 
-### Extracción y Procesamiento de Datos con IA
-
-Diseño de soluciones para extraer información estructurada de documentos no estructurados mediante servicios de IA en la nube.
-
-Contribuciones clave:
-
-* Extracción de datos con IA usando **Microsoft Azure AI Foundry**
-* Transformación de **texto no estructurado JSON**
-* Pipelines de procesamiento automatizado integrando datos extraídos en flujos de trabajo empresariales
-
-Esto permitió la **automatización de tareas de procesamiento documental que anteriormente requerían extracción manual de datos**.
+- Integraciones cloud end-to-end en Azure Functions (Python) entre sistemas corporativos (ServiceChannel–Workday), con extracción de datos con IA generativa (Azure AI Foundry), validación, automatización SFTP y reducción significativa de trabajo manual.
+- Automatizaciones Python para SAP, sincronización con Snowflake y procesamiento de datos regulatorios, desplegadas en entornos cloud y máquinas virtuales.
+- Consultoría en automatización: identificación de oportunidades y selección de la tecnología más adecuada para cada caso.
+- Mentoring técnico a equipos en Microsoft Graph, Azure Logic Apps, Power Automate y bases de datos.
 
 ---
 
-### Soluciones RPA y Automatización Híbrida
+### Automation Engineer · Roboyo
+*Enero 2021 – Diciembre 2021 · Barcelona (Remoto)*
 
-Implementación de flujos de trabajo automatizados para tareas operativas en entornos donde no estaban disponibles integraciones directas con los sistemas.
-
-Contribuciones clave:
-
-* Automatización de tareas empresariales repetitivas usando **tecnologías RPA**
-* Integración de **automatización de escritorio con servicios cloud**
-* Soluciones de automatización operando en **entornos híbridos combinando sistemas on-premise y plataformas cloud**
-
-Estas automatizaciones **redujeron significativamente el trabajo manual y el tiempo de procesamiento operativo**.
+- Instalación, actualización y mantenimiento en Windows Server del software de Automation Anywhere A360 (Control Room e IQ Bot).
+- Asesoramiento y configuración de infraestructura en cliente para la ejecución de robots con Automation Anywhere A360.
+- Creación de bots RPA con Automation Anywhere A360 y Power Automate para automatizar tareas operativas.
+- Desarrollo de aplicaciones web con Flask (Python) aprovechando la REST API de Automation Anywhere.
+- Integración de Power BI con múltiples fuentes de datos (incluido Bot Insights) para generar dashboards sobre ejecuciones y datos de negocio.
+- Preparación y entrega de formación interna y a clientes sobre Automation Anywhere: programación RPA, arquitectura del producto y administración.
 
 ---
 
-## Tecnologías
+### International Trade Advisor · Oficina Económica y Comercial de la Embajada de España en Roma
+*Enero 2020 – Diciembre 2020 · Roma, Italia*
 
-Microsoft Azure, Google Cloud, Python, Power Automate, Power Automate Desktop, SQL, Snowflake, Azure Table Storage
+Beca BEINT de internacionalización del Gobierno Vasco.
+
+- Desarrollo de scripts Python en Jupyter Notebook para el análisis y visualización de datos sobre la situación del COVID en Italia.
+- Automatización de informes de comercio internacional con Excel (VBA, tablas dinámicas).
+- Publicación de informes técnicos: *El estado de la tecnología blockchain en Italia* e *Informe e-País: El comercio electrónico en Italia 2020*.
 
 ---
 
-## Formación Actual
+### Proyectista Electrónico · Mondragon Assembly
+*Junio 2018 – Diciembre 2018 · Aretxabaleta*
 
-Agentes de IA con Python y Claude Agents SDK, Asyncio y programación concurrente en Python, VHDL para diseño de hardware, Bases de Datos Relacionales y SQL
+- Programación de PLCs de Siemens, OMRON y Beckhoff para líneas de ensamblaje industrial.
+- Desarrollo de macros Excel (VBA) para la automatización completa de la generación de ficheros de alarmas y mensajes para PLCs Siemens y OMRON.
+- Trabajo con protocolos de comunicación industrial: EthernetIP, EtherCAT, Profibus.
+- Certificaciones oficiales Beckhoff: TwinCAT 3 NC PTP y TwinCAT 3 PLC.
+
+---
+
+### Consultor Técnico Júnior · Deloitte
+*Octubre 2017 – Abril 2018 · Bilbao*
+
+- Desarrollo y análisis de automatización de procesos de negocio (RPA) con UiPath y Blue Prism.
+
+---
+
+### Ingeniero Eléctrico Junior · ZIV Aplicaciones y Tecnología
+*Noviembre 2015 – Agosto 2016 · Bilbao*
+
+Prácticas en colaboración con la UPV/EHU.
+
+- Automatización de test de un relé de protección inteligente (IED protection relay, modelo IRV-M) con OMICRON Test Universe.
+
+---
+
+## Tecnologías y Herramientas
+
+| Área | Tecnologías |
+|---|---|
+| **Cloud** | Microsoft Azure · Google Cloud Platform · Azure Functions · Azure Blob Storage · Azure API Management · Azure AI Foundry |
+| **Automatización / RPA** | Power Automate · Power Automate Desktop · Automation Anywhere A360 · UiPath · Blue Prism |
+| **Desarrollo** | Python · REST APIs · SOAP · Flask · JavaScript · jQuery · VBA |
+| **Datos** | SQL · Snowflake · Azure Table Storage · Power BI · Power Query (M) |
+| **Integración** | SAP · Workday · ServiceChannel · Microsoft Graph API · Atlassian Suite (Jira, Confluence) |
+| **DevOps / Otros** | Git · Azure DevOps · Jupyter · VS Code · Windows Server · Linux |
+
+---
+
+## Certificaciones
+
+| Certificación | Organismo |
+|---|---|
+| AZ-900 Microsoft Azure Fundamentals | Microsoft |
+| Associate Cloud Engineer | Google Cloud |
+| Advanced Developer Professional | UiPath |
+| Certified Master RPA Professional (A2019) | Automation Anywhere |
+| Certified Advanced RPA Professional (A2019) | Automation Anywhere |
+| Cambridge English: Advanced (CAE) — C1 | Cambridge Assessment English |
+| EGA (Euskal Gaitasun Agiria) | Gobierno Vasco |
+
+---
+
+## Formación Académica
+
+| Título | Centro | Año |
+|---|---|---|
+| Máster en Ingeniería Industrial | UPV/EHU | 2017 |
+| Laurea Magistrale in Ingegneria (Elettrica, Automazione, Informatica) | Università degli Studi di Cagliari | 2017 |
+| Grado en Ingeniería Industrial | UPV/EHU | 2015 |
+| Postgrado en Comercio Internacional | UPV/EHU | 2020 |
+| Máster Universitario en Profesorado (TIC) | UNIR | 2024 |
+| Grado en Ingeniería Informática (en curso) | UNED | 2023 – actualidad |
+
+---
+
+## Idiomas
+
+**Español** — Nativo · **Euskera** — Nativo · **Inglés** — Profesional C1 (CAE) (lo uso a diario) · **Italiano** — Profesional (limitado, no lo hablo desde 2020)
