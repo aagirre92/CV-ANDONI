@@ -1,4 +1,4 @@
-name: Translate (Claude) and Generate CV PDF
+name: Translate (Gemini) and Generate CV PDF
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install anthropic
+          pip install google-generativeai
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-xetex
 
@@ -46,15 +46,15 @@ jobs:
             **/*_EN.md
             **/*_EN.MD
 
-      - name: Translate ONLY modified Spanish CVs via Claude
+      - name: Translate ONLY modified Spanish CVs via Gemini
         if: steps.changed-files.outputs.any_changed == 'true'
         env:
-          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           # Only pass the _ES files to Python to protect your API tokens!
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             if [[ "$file" == *"_ES.MD" ]] || [[ "$file" == *"_ES.md" ]]; then
-              python .github/scripts/translate_cv.py "$file"
+              python .github/scripts/translate_cv_gemini.py "$file"
             fi
           done
 
