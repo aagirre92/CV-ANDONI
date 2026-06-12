@@ -69,7 +69,7 @@ Mi enfoque se centra en transformar procesos empresariales complejos en solucion
 ---
 
 ### International Trade Advisor · Oficina Económica y Comercial de la Embajada de España en Roma
-*Enero 2020 – Diciembre 2020 · Roma, Italia*
+*Septiembre 2019 – Diciembre 2020 · Bilbao y Roma*
 
 Beca BEINT de internacionalización del Gobierno Vasco.
 
