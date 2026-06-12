@@ -23,7 +23,7 @@ header-includes: |
 
 ## Resumen Profesional
 
-Ingeniero de automatización con más de 8 años de experiencia en automatización de procesos, integración de sistemas cloud y RPA. 
+Ingeniero de automatización con más de 8 años de experiencia en análisis y automatización de procesos, integración de sistemas y RPA. 
 
 He trabajado en proyectos de producción para clientes multinacionales del sector de salud, farmacéutico, retail, y manufactura, diseñando soluciones end-to-end con Azure, Python y Power Automate que conectan plataformas como SAP, Workday, Snowflake y Jira (entre otros).
 
