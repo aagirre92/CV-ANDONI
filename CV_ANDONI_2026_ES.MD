@@ -21,7 +21,7 @@ header-includes: |
 
 ---
 
-## Resumen Profesional
+## Introducción
 
 Ingeniero de automatización con más de 8 años de experiencia en análisis y automatización de procesos, integración de sistemas y RPA (Robotic Process Automation). 
 
