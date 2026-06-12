@@ -25,7 +25,7 @@ header-includes: |
 
 Ingeniero de automatización con más de 8 años de experiencia en análisis y automatización de procesos, integración de sistemas y RPA (Robotic Process Automation). 
 
-He trabajado en proyectos de producción para clientes multinacionales del sector de salud, farmacéutico, retail, y manufactura, diseñando soluciones end-to-end con Azure, Python y Power Automate que conectan plataformas como SAP, Workday, Snowflake y Jira (entre otros).
+He trabajado en proyectos de producción para clientes multinacionales del sector de salud, farmacéutico, retail, y manufactura, diseñando soluciones end-to-end con Azure, Python y Power Automate que conectan plataformas como SAP ERP, Workday, Snowflake y Jira (entre otros).
 
 Mi enfoque se centra en transformar procesos empresariales complejos en soluciones escalables, de bajo mantenimiento y con impacto operativo medible.
 

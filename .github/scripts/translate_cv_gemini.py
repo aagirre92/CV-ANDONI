@@ -1,17 +1,21 @@
 import os
 import sys
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 # MAIN EXECUTION LOGIC Setup
-api_key = os.environ.get("GEMINI_API_KEY")
-if not api_key:
+# The genai.Client() will automatically look for this variable.
+if not os.environ.get("GEMINI_API_KEY"):
     print("Error: GEMINI_API_KEY environment variable not set.")
     sys.exit(1)
 
-# Configure the Gemini client
-genai.configure(api_key=api_key)
+# Initialize the modern client
+client = genai.Client()
 
-# 1. Define the exact rules for Gemini
+# 1. Define the model
+MODEL = "gemini-3.5-flash"
+
+# 2. Define the exact rules
 SYSTEM_PROMPT = """You are an expert technical translator. Translate the provided Markdown CV from Spanish to English.
 
 CRITICAL RULES:
@@ -21,22 +25,17 @@ CRITICAL RULES:
 4. Do not translate proper names.
 5. Output ONLY the translated markdown. Do NOT wrap the response in ```markdown formatting blocks or include any conversational filler."""
 
-# 2. Initialize the model
-# gemini-1.5-flash is ideal for fast, high-quality text translation (and is free-tier friendly)
-model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
-    system_instruction=SYSTEM_PROMPT
-)
-
 def translate_cv_to_en(prompt):
-    # Set temperature to 0.0 for deterministic, literal translation output
-    generation_config = genai.GenerationConfig(
+    # Pass the system prompt and temperature via GenerateContentConfig
+    config = types.GenerateContentConfig(
+        system_instruction=SYSTEM_PROMPT,
         temperature=0.0
     )
     
-    response = model.generate_content(
-        prompt,
-        generation_config=generation_config
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=prompt,
+        config=config
     )
     
     text = response.text
@@ -56,7 +55,6 @@ def translate_markdown(files_to_process):
             # Ensure there are no lingering backticks or markdown declarations at the edges
             translated_content = translated_content.strip().strip("`")
             if translated_content.lower().startswith("markdown"):
-                # Strip out the word "markdown" if the model accidentally included it
                 translated_content = translated_content[8:].strip()
 
             new_filename = file_path.replace("_ES.MD", "_EN.MD").replace("_ES.md", "_EN.md")
@@ -66,7 +64,6 @@ def translate_markdown(files_to_process):
                 
             print(f"Successfully generated {new_filename}")
 
-            
         except Exception as e:
             print(f"🔴🔴🔴Error translating {file_path}: {e}")
             # No voy a raisear aquí, sino no me pasa a PDF...si no puede traducir por lo que sea, mala suerte
