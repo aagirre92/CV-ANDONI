@@ -114,7 +114,7 @@ Prácticas en colaboración con la UPV/EHU.
 | **Desarrollo** | Python · REST APIs (OAuth 2.0, reintentos, paginación, throttling) · SOAP · Flask · JavaScript · jQuery · VBA |
 | **Datos** | SQL · SQL Server · Snowflake · Azure Table Storage · Power BI · Power Query (M) | SharePoint
 | **Integración** | SAP · Workday · ServiceChannel · Microsoft Graph API · Atlassian Suite (Jira, Confluence) · Azure AD / Entra ID (App Registrations, Service Principals) |
-| **DevOps / Otros** | Git · Azure DevOps · Jupyter · VS Code · Windows Server · Linux |
+| **DevOps / Otros** | Git · Azure DevOps · Jupyter · VS Code · Windows Server · Linux (Debian) |
 
 ---
 

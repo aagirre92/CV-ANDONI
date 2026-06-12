@@ -89,7 +89,7 @@ def translate_markdown(files_to_process):
             
         except Exception as e:
             print(f"🔴🔴🔴Error translating {file_path}: {e}")
-            raise e
+            # No voy a raisear aquí, sino no me pasa a PDF...si no puede traducir por lo que sea, mala suerte
 
 if __name__ == "__main__":
     # Grab the exact files passed from the GitHub Action
