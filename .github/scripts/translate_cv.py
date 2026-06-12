@@ -85,9 +85,11 @@ def translate_markdown(files_to_process):
                 f.write(translated_content)
                 
             print(f"Successfully generated {new_filename}")
+
             
         except Exception as e:
-            print(f"Error translating {file_path}: {e}")
+            print(f"🔴🔴🔴Error translating {file_path}: {e}")
+            raise e
 
 if __name__ == "__main__":
     # Grab the exact files passed from the GitHub Action
