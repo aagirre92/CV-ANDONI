@@ -38,19 +38,19 @@ Mi enfoque se centra en transformar procesos empresariales complejos en solucion
 
 **Cliente retail europeo — Automatización CRO Reporting**
 
-- Diseño e implementación de un pipeline de reporting en Python que genera presentaciones PowerPoint automáticamente desde datos de Jira, usando Azure Functions y Azure Blob Storage como infraestructura cloud.
-- Publicación automatizada de informes en Confluence mediante la API de Atlassian, reduciendo el tiempo de elaboración de informes semanales de horas a minutos.
+- Diseño e implementación de un pipeline de reporting en Python que genera presentaciones PowerPoint automáticamente desde datos de Jira, usando Azure Functions y Azure Blob Storage como infraestructura cloud; integración con las APIs REST de Atlassian con gestión de errores, reintentos y paginación.
+- Publicación automatizada de informes en Confluence mediante la API de Atlassian y Power Automate Cloud como orquestador, reduciendo el tiempo de elaboración de informes semanales de horas a minutos.
 
 **Cliente europeo sector farmacéutico — Migración RPA a la nube**
 
 - Lideré la migración de Automation Anywhere A360 de on-premise a SaaS, coordinando aspectos técnicos, de seguridad y cumplimiento (GDPR).
-- Optimización de costes migrando procesos desde Automation Anywhere al ecosistema Microsoft Power Automate, reduciendo licencias y simplificando el mantenimiento.
+- Optimización de costes migrando procesos desde Automation Anywhere al ecosistema Microsoft Power Automate (Cloud y Desktop), reduciendo licencias y simplificando el mantenimiento.
 - Creación de automatizaciones para SAP ERP con herramientas RPA y Python.
 
 **Otros proyectos en EPAM**
 
-- Integraciones cloud end-to-end en Azure Functions (Python) entre sistemas corporativos (ServiceChannel–Workday), con extracción de datos con IA generativa (Azure AI Foundry), validación, automatización SFTP y reducción significativa de trabajo manual.
-- Automatizaciones Python para SAP, sincronización con Snowflake y procesamiento de datos regulatorios, desplegadas en entornos cloud y máquinas virtuales.
+- Integraciones cloud end-to-end en Azure Functions (Python) entre sistemas corporativos (ServiceChannel–Workday), con autenticación OAuth 2.0 y Azure AD App Registrations, extracción de datos con IA generativa (Azure AI Foundry), validación, automatización SFTP y reducción significativa de trabajo manual; invocadas desde Power Automate Cloud con gestión de throttling y reintentos.
+- Automatizaciones Python para SAP, sincronización con Snowflake y SQL Server, y procesamiento de datos regulatorios, desplegadas en entornos cloud y máquinas virtuales.
 - Consultoría en automatización: identificación de oportunidades y selección de la tecnología más adecuada para cada caso.
 - Mentoring técnico a equipos en Microsoft Graph, Azure Logic Apps, Power Automate y bases de datos.
 
@@ -110,10 +110,10 @@ Prácticas en colaboración con la UPV/EHU.
 | Área | Tecnologías |
 |---|---|
 | **Cloud** | Microsoft Azure · Google Cloud Platform · Azure Functions · Azure Blob Storage · Azure API Management · Azure AI Foundry |
-| **Automatización / RPA** | Power Automate · Power Automate Desktop · Automation Anywhere A360 · UiPath · Blue Prism |
-| **Desarrollo** | Python · REST APIs · SOAP · Flask · JavaScript · jQuery · VBA |
-| **Datos** | SQL · Snowflake · Azure Table Storage · Power BI · Power Query (M) |
-| **Integración** | SAP · Workday · ServiceChannel · Microsoft Graph API · Atlassian Suite (Jira, Confluence) |
+| **Automatización / RPA** | Power Automate Cloud · Power Automate Desktop · Automation Anywhere A360 · UiPath · Blue Prism |
+| **Desarrollo** | Python · REST APIs (OAuth 2.0, reintentos, paginación, throttling) · SOAP · Flask · JavaScript · jQuery · VBA |
+| **Datos** | SQL · SQL Server · Snowflake · Azure Table Storage · Power BI · Power Query (M) | SharePoint
+| **Integración** | SAP · Workday · ServiceChannel · Microsoft Graph API · Atlassian Suite (Jira, Confluence) · Azure AD / Entra ID (App Registrations, Service Principals) |
 | **DevOps / Otros** | Git · Azure DevOps · Jupyter · VS Code · Windows Server · Linux |
 
 ---
